@@ -290,10 +290,11 @@ nav.bws-nav .nav-logo img { height: 42px; filter: brightness(0) invert(1); displ
 .callout { background: var(--surface); border:1px solid var(--line); border-radius:var(--radius); padding: clamp(1.8rem,4vw,3rem); text-align:center; }
 .callout .big { font-size: clamp(2.6rem,6vw,4rem); font-weight:800; letter-spacing:-0.04em; color:var(--blue); line-height:1; margin-bottom:0.6rem; font-variant-numeric:tabular-nums; }
 .callout p { max-width:48ch; margin:0 auto; color:var(--body); }
-.callout-sanctuary { position: relative; border-color: transparent; color: #fff; overflow: hidden; }
-.callout-sanctuary .callout-bg { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; z-index: 0; }
-.callout-sanctuary .callout-overlay { position: absolute; inset: 0; background: rgba(10,31,68,.78); z-index: 1; }
-.callout-sanctuary .callout-content { position: relative; z-index: 2; }
+.sanctuary-band { position: relative; overflow: hidden; }
+.sanctuary-band .sanctuary-bg { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; z-index: 0; }
+.sanctuary-band .sanctuary-overlay { position: absolute; inset: 0; background: rgba(10,31,68,.78); z-index: 1; }
+.sanctuary-band > .container { position: relative; z-index: 2; }
+.callout-sanctuary { background: transparent; border-color: transparent; color: #fff; }
 .callout-sanctuary .h-eyebrow { color: #BFD6FF; }
 .callout-sanctuary h2 { color: #fff; }
 .callout-sanctuary p { color: rgba(255,255,255,0.9); }
