@@ -62,3 +62,13 @@
     if (e.key === 'Escape') document.querySelectorAll('.bio-modal.is-open').forEach(closeModal);
   });
 })();
+
+(function() {
+  var cta = document.querySelector('.floating-cta');
+  var footer = document.querySelector('footer');
+  if (!cta || !footer || !('IntersectionObserver' in window)) return;
+  var observer = new IntersectionObserver(function(entries) {
+    entries.forEach(function(entry) { cta.classList.toggle('is-hidden', entry.isIntersecting); });
+  });
+  observer.observe(footer);
+})();
