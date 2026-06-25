@@ -35,3 +35,30 @@
   toggle.addEventListener('click', function() { menu.classList.toggle('open'); });
   document.addEventListener('click', function(e) { if (!toggle.contains(e.target) && !menu.contains(e.target)) menu.classList.remove('open'); });
 })();
+
+(function() {
+  var triggers = document.querySelectorAll('[data-modal-target]');
+  if (!triggers.length) return;
+  function openModal(modal) {
+    modal.classList.add('is-open');
+    modal.setAttribute('aria-hidden', 'false');
+    document.body.classList.add('bio-modal-locked');
+  }
+  function closeModal(modal) {
+    modal.classList.remove('is-open');
+    modal.setAttribute('aria-hidden', 'true');
+    document.body.classList.remove('bio-modal-locked');
+  }
+  triggers.forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      var modal = document.getElementById(btn.getAttribute('data-modal-target'));
+      if (modal) openModal(modal);
+    });
+  });
+  document.querySelectorAll('.bio-modal [data-modal-close]').forEach(function(el) {
+    el.addEventListener('click', function() { closeModal(el.closest('.bio-modal')); });
+  });
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') document.querySelectorAll('.bio-modal.is-open').forEach(closeModal);
+  });
+})();
