@@ -333,8 +333,10 @@ body.tpl-home .bc-copy { padding: 1.5rem 1.7rem 1.7rem; flex: 1; }
   .feature-grid { grid-template-columns:1fr; }
   .ind-grid { grid-template-columns:1fr; }
   .ind-tile.cta { aspect-ratio: auto; padding: 0.4rem 0; }
-  .profile { grid-template-columns:1fr; }
-  .profile img { width:90px;height:90px; }
+  .profile { display: block; }
+  .profile img { float: left; width: 72px; height: 72px; margin: 0 1rem 0.75rem 0; }
+  .profile h3 { margin-top: 0; }
+  .profile p { clear: both; }
   .nav-links, .nav-phone { display: none; }
   .nav-mobile-toggle { display: block; }
   .floating-cta { display: inline-flex; }
