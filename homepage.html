@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Big Wolf Solutions — Find the Money Your Business Is Leaving Behind</title>
+  <meta name="description" content="Big Wolf Solutions helps businesses recover hidden revenue through R&D tax credits, settlement recovery, merchant savings, and supplemental health coverage. Free discovery. Zero risk.">
+  <link rel="icon" href="https://assets.cdn.filesafe.space/1ZMpwJ9nYwk9qTFScUtS/media/69cec39bfe4f1c0b67c6dd8c.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jaredcordell/bws-site-assets@main/css/styles.css">
+  <style>
+    /* Services bento: 2 cards on the top row, 3 on the bottom row (desktop only).
+       Uses a 6-column track so the top pair spans 3 each and the bottom trio spans 2 each.
+       Below 1024px the shared stylesheet already collapses .bento to a single column. */
+    @media (min-width: 1025px) {
+      .tpl-home .bento.bento-2-3 { grid-template-columns: repeat(6, 1fr); }
+      .tpl-home .bento.bento-2-3 > .bento-card:nth-child(-n+2) { grid-column: span 3; }
+      .tpl-home .bento.bento-2-3 > .bento-card:nth-child(n+3) { grid-column: span 2; }
+    }
+  </style>
+</head>
+<body class="tpl-home">
+<div id="bws-home-root">
+
+  <!-- ══ NAV ════════════════════════════════════════════════ -->
+  <nav class="bws-nav" id="bwsNav">
+    <a href="/" class="nav-logo">
+      <img src="https://assets.cdn.filesafe.space/1ZMpwJ9nYwk9qTFScUtS/media/69cec3ab75502063bb5a706a.png" alt="Big Wolf Solutions">
+    </a>
+    <ul class="nav-links">
+      <li class="has-dropdown">
+        <a>Services</a>
+        <ul class="nav-dropdown">
+          <li><span class="dd-eyebrow">Recover Money</span></li>
+          <li><a href="/r-d-tax-credits">R&amp;D Tax Credits</a></li>
+          <li><a href="/settlement-recovery">Settlement Recovery</a></li>
+          <li><span class="dd-eyebrow" style="margin-top:0.35rem">Save Money</span></li>
+          <li><a href="/merchant-services">Merchant Services</a></li>
+          <li><a href="/supplemental-health">Supplemental Health</a></li>
+          <li><a href="/payroll-health">Payroll &amp; Health</a></li>
+        </ul>
+      </li>
+      <li><a href="#process">How It Works</a></li>
+      <li><a href="#testimonials">Results</a></li>
+      <li><a href="/about">About</a></li>
+      <li><a href="/referral-partner">Partners</a></li>
+      <li><a href="#">Blog</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="nav-right">
+      <a href="tel:8444430482" class="nav-phone">(844) 443-0482</a>
+      <a href="https://calendly.com/big-wolf-solutions" target="_blank" class="btn btn-primary btn-sm">Book a Free Call</a>
+      <button class="nav-mobile-toggle" id="navToggle" aria-label="Toggle menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </nav>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a>Services</a>
+        <ul class="submenu">
+          <li><a href="/r-d-tax-credits">R&amp;D Tax Credits</a></li>
+          <li><a href="/settlement-recovery">Settlement Recovery</a></li>
+          <li><a href="/merchant-services">Merchant Services</a></li>
+          <li><a href="/supplemental-health">Supplemental Health</a></li>
+          <li><a href="/payroll-health">Payroll &amp; Health</a></li>
+        </ul>
+      </li>
+      <li><a href="#process">How It Works</a></li>
+      <li><a href="#testimonials">Results</a></li>
+      <li><a href="/about">About</a></li>
+      <li><a href="/referral-partner">Partners</a></li>
+      <li><a href="#">Blog</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="tel:8444430482">(844) 443-0482</a></li>
+      <li><a href="https://calendly.com/big-wolf-solutions" target="_blank">Book a Free Call →</a></li>
+    </ul>
+  </div>
+
+  <!-- ══ HERO ═══════════════════════════════════════════════ -->
+  <section class="hero" id="home">
+    <span class="hero-fade-line"></span>
+    <div class="hero-inner container">
+      <div class="hero-text">
+        <div class="hero-pill"><span class="hero-pill-dot"></span> Free discovery · Zero risk</div>
+        <h1>Find the money your business <span class="accent">is leaving behind.</span></h1>
+        <p class="hero-sub">R&amp;D tax credits, settlement recovery, merchant savings, and supplemental health coverage — recovered for businesses in all 50 states. Free analysis, no upfront cost.</p>
+        <div class="hero-actions">
+          <a href="https://calendly.com/big-wolf-solutions" target="_blank" class="btn btn-primary">Request a free consultation <span class="arr">→</span></a>
+          <a href="#process" class="btn btn-secondary">How it works</a>
+        </div>
+        <div class="hero-badges">
+          <span class="hero-badge"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg> No recovery, no fee</span>
+          <span class="hero-badge"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="10"/></svg> IRS-compliant</span>
+          <span class="hero-badge"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg> Fully confidential</span>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="hero-img-frame">
+          <img src="https://assets.cdn.filesafe.space/1ZMpwJ9nYwk9qTFScUtS/media/6a23036ae8bb5ac427e9ebbb.png" alt="Business professional reviewing financial documents">
+          <div class="hero-stats">
+            <div class="hero-stat"><span class="hero-stat-num">$50K<span class="u">+</span></span><span class="hero-stat-lbl">Avg R&amp;D credit</span></div>
+            <div class="hero-stat"><span class="hero-stat-num">25<span class="u">%+</span></span><span class="hero-stat-lbl">Merchant savings</span></div>
+            <div class="hero-stat"><span class="hero-stat-num">100<span class="u">%</span></span><span class="hero-stat-lbl">Free discovery</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ MARQUEE ════════════════════════════════════════════ -->
+  <div class="marquee-sec">
+    <div class="marquee-label">Recovering hidden revenue across every industry</div>
+    <div class="marquee">
+      <div class="marquee-track" id="marqueeTrack">
+        <span class="marquee-item"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><path d="M3 21h18M5 21V7l8-4v18M19 21V11l-6-4"/></svg> Construction</span>
+        <span class="marquee-item"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><path d="M2 20h20M4 20V8l5 3V8l5 3V8l5 3v9"/></svg> Manufacturing</span>
+        <span class="marquee-item"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><polyline points="8 6 2 12 8 18"/><polyline points="16 6 22 12 16 18"/></svg> Software &amp; Tech</span>
+        <span class="marquee-item"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><path d="M12 21C12 21 4 14 4 8a4 4 0 018-1 4 4 0 018 1c0 6-8 13-8 13z"/></svg> Healthcare</span>
+        <span class="marquee-item"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><path d="M18 8h1a4 4 0 010 8h-1M2 8h16v9a4 4 0 01-4 4H6a4 4 0 01-4-4z"/></svg> Food &amp; Beverage</span>
+        <span class="marquee-item"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><circle cx="12" cy="12" r="3"/><path d="M12 2v4M12 18v4M2 12h4M18 12h4"/></svg> Engineering</span>
+        <span class="marquee-item"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><path d="M3 18v-6a9 9 0 0118 0v6M3 18l3-2 3 2 3-2 3 2 3-2"/></svg> Agriculture</span>
+        <span class="marquee-item"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V5a2 2 0 012-2h4a2 2 0 012 2v2"/></svg> Professional Services</span>
+        <span class="marquee-item" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><path d="M3 21h18M5 21V7l8-4v18M19 21V11l-6-4"/></svg> Construction</span>
+        <span class="marquee-item" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><path d="M2 20h20M4 20V8l5 3V8l5 3V8l5 3v9"/></svg> Manufacturing</span>
+        <span class="marquee-item" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><polyline points="8 6 2 12 8 18"/><polyline points="16 6 22 12 16 18"/></svg> Software &amp; Tech</span>
+        <span class="marquee-item" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><path d="M12 21C12 21 4 14 4 8a4 4 0 018-1 4 4 0 018 1c0 6-8 13-8 13z"/></svg> Healthcare</span>
+        <span class="marquee-item" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><path d="M18 8h1a4 4 0 010 8h-1M2 8h16v9a4 4 0 01-4 4H6a4 4 0 01-4-4z"/></svg> Food &amp; Beverage</span>
+        <span class="marquee-item" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><circle cx="12" cy="12" r="3"/><path d="M12 2v4M12 18v4M2 12h4M18 12h4"/></svg> Engineering</span>
+        <span class="marquee-item" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><path d="M3 18v-6a9 9 0 0118 0v6M3 18l3-2 3 2 3-2 3 2 3-2"/></svg> Agriculture</span>
+        <span class="marquee-item" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V5a2 2 0 012-2h4a2 2 0 012 2v2"/></svg> Professional Services</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══ SERVICES BENTO ═════════════════════════════════════ -->
+  <section class="band has-wm" id="services">
+    <div class="wm m-rings"></div>
+    <div class="container">
+      <div class="sec-head">
+        <span class="h-eyebrow">What we do</span>
+        <h2 class="headline wide">Five ways we find you money. <span class="dim">Every analysis is free — you only move forward when the numbers make sense.</span></h2>
+      </div>
+
+      <div class="bento bento-2-3">
+
+        <!-- R&D — statement mockup -->
+        <a href="/r-d-tax-credits" class="bento-card">
+          <div class="bc-stage">
+            <div class="mock">
+              <div class="mock-bar"><span class="mock-dot"></span><span class="mock-dot"></span><span class="mock-dot"></span><span class="mock-title">Qualified R&amp;D activities</span></div>
+              <div class="mrow"><span class="l">Software development</span><span class="v">$214,800</span></div>
+              <div class="mrow"><span class="l">Process engineering</span><span class="v">$96,400</span></div>
+              <div class="mrow"><span class="l">Product &amp; materials testing</span><span class="v">$58,200</span></div>
+              <div class="mrow total"><span class="l">Federal R&amp;D credit</span><span class="v">$71,240</span></div>
+            </div>
+          </div>
+          <div class="bc-copy">
+            <h3>R&amp;D Tax Credits</h3>
+            <p>Most businesses that qualify never claim them. If you build software, custom processes, or new products, the credit is often six figures — and it's cash back in your pocket.</p>
+            <span class="link-arrow">Learn more <span class="arr">→</span></span>
+          </div>
+        </a>
+
+        <!-- Merchant — fee before/after -->
+        <a href="/merchant-services" class="bento-card">
+          <div class="bc-stage">
+            <div class="mock">
+              <div class="mock-bar"><span class="mock-title" style="margin-left:0">Processing fees</span></div>
+              <div class="fee">
+                <div class="fee-top"><span class="lbl">Before</span><span class="pct">3.4%</span></div>
+                <div class="fee-track"><div class="fee-fill before"></div></div>
+              </div>
+              <div class="fee">
+                <div class="fee-top"><span class="lbl">With Big Wolf</span><span class="pct">2.1%</span></div>
+                <div class="fee-track"><div class="fee-fill after"></div></div>
+              </div>
+              <span class="save-tag">▲ You keep 25%+ more on every transaction</span>
+            </div>
+          </div>
+          <div class="bc-copy">
+            <h3>Merchant Services</h3>
+            <p>8 in 10 businesses overpay on processing. We find out if you're one of them — free.</p>
+            <span class="link-arrow">Learn more <span class="arr">→</span></span>
+          </div>
+        </a>
+
+        <!-- Settlement — match list -->
+        <a href="/settlement-recovery" class="bento-card">
+          <div class="bc-stage">
+            <div class="mock">
+              <div class="mock-headline"><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke-width="3"><path d="M5 12l4 4L19 6"/></svg></span> 3 eligible settlements found</div>
+              <div class="mrow"><span class="l">Card interchange antitrust</span><span class="chip-ok">Eligible</span></div>
+              <div class="mrow"><span class="l">Payment processing class action</span><span class="chip-ok">Eligible</span></div>
+              <div class="mrow"><span class="l">ATM/debit fee settlement</span><span class="chip-blue">Filing</span></div>
+            </div>
+          </div>
+          <div class="bc-copy">
+            <h3>Settlement Recovery</h3>
+            <p>Active class-action settlements may already list your company. Find out what you're owed.</p>
+            <span class="link-arrow">Learn more <span class="arr">→</span></span>
+          </div>
+        </a>
+
+        <!-- Supplemental Health — ledger card -->
+        <a href="/supplemental-health" class="bento-card">
+          <div class="bc-stage">
+            <div class="mock" style="border-radius:12px">
+              <div class="mock-bar"><span class="mock-title" style="margin-left:0">Per employee · monthly</span></div>
+              <div class="mrow"><span class="l">Premium offset</span><span class="v" style="color:var(--green)">+$78</span></div>
+              <div class="mrow"><span class="l">Payroll tax savings</span><span class="v" style="color:var(--green)">+$45</span></div>
+              <div class="mrow"><span class="l">Program cost</span><span class="v">–$33</span></div>
+              <div class="mrow total"><span class="l">Net to your business</span><span class="v" style="color:var(--green)">+$45</span></div>
+            </div>
+          </div>
+          <div class="bc-copy">
+            <h3>Supplemental Health</h3>
+            <p>Most employers assume benefits always cost money. This program is built differently — it generates net-positive cash flow for your business <em>and</em> better coverage for your employees, with zero change to take-home pay.</p>
+            <span class="link-arrow">Learn more <span class="arr">→</span></span>
+          </div>
+        </a>
+
+        <!-- Payroll & Health — Champ Plan card -->
+        <a href="/payroll-health" class="bento-card">
+          <div class="bc-stage">
+            <div class="mock" style="border-radius:12px">
+              <div class="mock-bar"><span class="mock-title" style="margin-left:0">Per employee · monthly</span></div>
+              <div class="mrow"><span class="l">Payroll, HR &amp; finance platform</span><span class="v" style="color:var(--green)">Included</span></div>
+              <div class="mrow"><span class="l">Champ Plan medical benefits</span><span class="v" style="color:var(--green)">Included</span></div>
+              <div class="mrow"><span class="l">Payroll tax savings</span><span class="v" style="color:var(--green)">Applied</span></div>
+              <div class="mrow total"><span class="l">Your net cost</span><span class="v">$2.20</span></div>
+            </div>
+          </div>
+          <div class="bc-copy">
+            <h3>Payroll &amp; Health</h3>
+            <p>One cloud platform for payroll, HR, and finance — bundled with the Champ Plan's medical benefits — for a net cost of just $2.20 per employee, per month. Better benefits, less admin, and payroll-tax savings that fund it all.</p>
+            <span class="link-arrow">Learn more <span class="arr">→</span></span>
+          </div>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ STATS BAND ═════════════════════════════════════════ -->
+  <section class="band stats-band">
+    <div class="container">
+      <div class="sec-head" style="margin-bottom:0">
+        <h2 class="headline wide">The numbers behind the work. <span class="dim">Real recoveries for real businesses, across every state and sector.</span></h2>
+      </div>
+      <div class="stats-grid">
+        <div class="stat-cell"><div class="stat-num">$50K+</div><div class="stat-desc">Average R&amp;D tax credit recovered per engagement</div></div>
+        <div class="stat-cell"><div class="stat-num">25%+</div><div class="stat-desc">Typical reduction in merchant processing fees</div></div>
+        <div class="stat-cell"><div class="stat-num">50</div><div class="stat-desc">States served — every industry, every size</div></div>
+        <div class="stat-cell"><div class="stat-num">$0</div><div class="stat-desc">Upfront cost across every service we offer</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ PROCESS ════════════════════════════════════════════ -->
+  <section class="band has-wm" id="process">
+    <div class="wm m-grid"></div>
+    <div class="container">
+      <div class="process-grid">
+        <div>
+          <div class="sec-head" style="margin-bottom:2.25rem">
+            <span class="h-eyebrow">How it works</span>
+            <h2 class="headline">Simple, transparent, zero&nbsp;risk. <span class="dim">Decisions only when the numbers are clear.</span></h2>
+          </div>
+          <div class="steps">
+            <div class="step">
+              <div class="step-num">1</div>
+              <div><h4>Schedule a free discovery call</h4><p>A 15–20 minute call to understand your business and identify which services apply. No pitch, no pressure.</p></div>
+            </div>
+            <div class="step">
+              <div class="step-num">2</div>
+              <div><h4>We run the analysis</h4><p>Our team audits your activity, vendor history, and processing statements at no cost — so you decide with full information.</p></div>
+            </div>
+            <div class="step">
+              <div class="step-num">3</div>
+              <div><h4>Review the numbers</h4><p>We show you exactly what you qualify for and what it's worth before you sign anything. Full transparency on every fee.</p></div>
+            </div>
+            <div class="step">
+              <div class="step-num">4</div>
+              <div><h4>We handle everything</h4><p>Documentation, filing, negotiations, and claim management — all done for you while you focus on your business.</p></div>
+            </div>
+          </div>
+        </div>
+        <div class="process-visual">
+          <img src="https://assets.cdn.filesafe.space/1ZMpwJ9nYwk9qTFScUtS/media/6a23036af607d4002b94f91e.png" alt="Nick and Ali Yocca on a discovery call">
+          <br>
+          <br>
+          <a href="https://calendly.com/big-wolf-solutions" target="_blank" class="btn btn-primary">Request a free consultation <span class="arr">→</span></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ INDUSTRIES ═════════════════════════════════════════ -->
+  <section class="band" id="industries" style="background:var(--surface); border-top:1px solid var(--line); border-bottom:1px solid var(--line);">
+    <div class="container">
+      <div class="sec-head">
+        <span class="h-eyebrow">Who we serve</span>
+        <h2 class="headline wide">Hidden money exists in every industry. <span class="dim">We've recovered hundreds of thousands for businesses that never thought they qualified.</span></h2>
+      </div>
+      <div class="ind-grid">
+        <div class="ind-tile"><img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=640&h=480&fit=crop&q=80" alt="Construction"><div class="ind-label"><h4>Construction</h4><p>Process improvement, custom builds, structural innovation</p></div></div>
+        <div class="ind-tile"><img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=640&h=480&fit=crop&q=80" alt="Manufacturing"><div class="ind-label"><h4>Manufacturing</h4><p>Product development, process automation, materials testing</p></div></div>
+        <div class="ind-tile"><img src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=640&h=480&fit=crop&q=80" alt="Software &amp; Tech"><div class="ind-label"><h4>Software &amp; Tech</h4><p>Custom software, platform builds, R&amp;D-heavy by definition</p></div></div>
+        <div class="ind-tile"><img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=640&h=480&fit=crop&q=80" alt="Food &amp; Beverage"><div class="ind-label"><h4>Food &amp; Beverage</h4><p>Recipe development, packaging innovation, food science</p></div></div>
+        <div class="ind-tile"><img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=640&h=480&fit=crop&q=80" alt="Healthcare"><div class="ind-label"><h4>Healthcare</h4><p>Medical devices, treatment protocols, software systems</p></div></div>
+        <div class="ind-tile"><img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=640&h=480&fit=crop&q=80" alt="Engineering &amp; Architecture"><div class="ind-label"><h4>Engineering</h4><p>Custom design, structural calculations, modeling work</p></div></div>
+        <div class="ind-tile"><img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=640&h=480&fit=crop&q=80" alt="Agriculture"><div class="ind-label"><h4>Agriculture</h4><p>Crop optimization, equipment innovation, sustainability</p></div></div>
+        <div class="ind-tile cta">
+          <div class="ind-cta-in">
+            <div class="eb">Don't see yours?</div>
+            <h4>Your industry</h4>
+            <p>If you're solving technical problems or running a business, you may qualify regardless of sector.</p>
+            <a href="https://calendly.com/big-wolf-solutions" target="_blank">Find out <span>→</span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ TESTIMONIALS ═══════════════════════════════════════ -->
+  <section class="band has-wm" id="testimonials">
+    <div class="wm m-bars"></div>
+    <div class="container">
+      <div class="sec-head center">
+        <span class="h-eyebrow">Client results</span>
+        <h2 class="headline center" style="margin-left:auto;margin-right:auto;max-width:24ch">Trusted by business owners across the country.</h2>
+      </div>
+      <div class="t-grid">
+        <div class="t-card">
+          <div class="t-stars"><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg></div>
+          <p class="t-quote">Nick is great to work with, he has ways to help your business save money that you may not be aware of. He has solutions to help businesses with saving money and even making money through tax incentives and many more. Nick and his team are highly trained and trusted advisors that I recommend to anyone in business.</p>
+          <div class="t-foot"><div class="t-meta">Founder & CEO, Happy Path Marketing</div><div class="t-loc">Las Vegas, NV</div></div>
+        </div>
+        <div class="t-card">
+          <div class="t-stars"><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg></div>
+          <p class="t-quote">Their team has been superb to work with, providing outstanding customer service and significantly reducing our merchant fees. Their staff is responsive, knowledgeable, and always goes above and beyond to assist with any questions. We feel confident knowing we can always reach someone who is committed to making our job easier.</p>
+          <div class="t-foot"><div class="t-meta">President, GOBA (Greater Orlando Builders Association)</div><div class="t-loc">Orlando, FL</div></div>
+        </div>
+        <div class="t-card">
+          <div class="t-stars"><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg></div>
+          <p class="t-quote">After years of paying too much at different companies, I can finally say I'm happy with my merchant services. Nick has been upfront and transparent with everything — how things work, what we pay, and what to do if we have issues. He goes above and beyond for his clients.</p>
+          <div class="t-foot"><div class="t-meta">Vice President, Pit Row Services</div><div class="t-loc">Lincoln, AL</div></div>
+        </div>
+      </div>
+      <div class="t-cta"><a href="/testimonials" class="link-arrow">Read all stories <span class="arr">→</span></a></div>
+    </div>
+  </section>
+
+  <!-- ══ REFERRAL ═══════════════════════════════════════════ -->
+  <section class="band referral" id="partners" style="padding-top:clamp(3rem,5vw,4.5rem);padding-bottom:clamp(3rem,5vw,4.5rem)">
+    <div class="container">
+      <div class="referral-in">
+        <div>
+          <span class="h-eyebrow">Referral partner program</span>
+          <h2 class="headline">Know a business leaving money on the table? <span class="dim">Earn up to 50% on every client you introduce.</span></h2>
+        </div>
+        <a href="/referral-partner" class="btn btn-primary">Become a partner <span class="arr">→</span></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ CONVERSION / FORM ══════════════════════════════════ -->
+  <section class="band convert has-wm" id="contact">
+    <div class="wm m-dots"></div>
+    <div class="container">
+      <div class="form-card">
+        <iframe
+          src="https://links.bigwolfsolutions.net/widget/form/sGeIoBYh3gjiVu2pi2l7"
+          style="width:100%;height:1300px;border:none;border-radius:12px;display:block;background:#fff"
+          id="inline-sGeIoBYh3gjiVu2pi2l7"
+          data-layout="{'id':'INLINE'}"
+          data-trigger-type="alwaysShow" data-trigger-value=""
+          data-activation-type="alwaysActivated" data-activation-value=""
+          data-deactivation-type="neverDeactivate" data-deactivation-value=""
+          data-form-name="Universal Website Lead Capture Form"
+          data-height="1300" data-layout-iframe-id="inline-sGeIoBYh3gjiVu2pi2l7"
+          data-form-id="sGeIoBYh3gjiVu2pi2l7"
+          title="Universal Website Lead Capture Form"
+        ></iframe>
+        <script src="https://links.bigwolfsolutions.net/js/form_embed.js"></script>
+      </div>
+      <div class="convert-actions">
+        <a href="https://calendly.com/big-wolf-solutions" target="_blank" class="btn btn-primary">Prefer to talk? Book a free call <span class="arr">→</span></a>
+        <a href="tel:8444430482" class="convert-phone">or call (844) 443-0482</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ FINAL CTA ══════════════════════════════════════════ -->
+  <section class="band final-cta">
+    <div class="container">
+      <span class="h-eyebrow">No cost. No commitment. No risk.</span>
+      <h2>Find out what your business qualifies for.</h2>
+      <p>The average business we work with recovers $50,000 or more in year one. The discovery call is free, the analysis is free, and you only move forward when the numbers make sense.</p>
+      <div class="btns">
+        <a href="https://calendly.com/big-wolf-solutions" target="_blank" class="btn btn-primary">Book your free discovery call <span class="arr">→</span></a>
+        <a href="#services" class="btn btn-ghost">View all services</a>
+      </div>
+    </div>
+  </section>
+
+<!-- ════ FOUNDER DIRECT-CONTACT BLOCK (reusable across pages) ════ -->
+<section class="bws-founder">
+  <div class="bws-founder-in">
+    <div class="bws-founder-id">
+      <span class="bws-founder-mono">
+        <img src="https://assets.cdn.filesafe.space/1ZMpwJ9nYwk9qTFScUtS/media/6a23038f7eee184e871d203d.png" alt="Nick Yocca, President of Big Wolf Solutions" width="54" height="54" loading="lazy">
+      </span>
+      <p class="bws-founder-line">Questions? Talk directly with <strong>Nick Yocca, President</strong> &mdash; 25 years helping businesses cut costs and recover revenue.</p>
+    </div>
+    <div class="bws-founder-contact">
+      <a href="tel:6893024999" class="bws-founder-call">Call (689)&nbsp;302-4999</a>
+      <a href="mailto:Nick@BigWolfSolutions.com" class="bws-founder-email">Nick@BigWolfSolutions.com</a>
+    </div>
+  </div>
+</section>
+
+  <!-- ══ FOOTER ═════════════════════════════════════════════ -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="https://assets.cdn.filesafe.space/1ZMpwJ9nYwk9qTFScUtS/media/69cec3ab75502063bb5a706a.png" alt="Big Wolf Solutions">
+          <p>Your partner in profitability. We recover hidden revenue and reduce costs for businesses nationwide — through R&amp;D tax credits, settlement recovery, merchant savings, and supplemental health coverage.</p>
+        </div>
+        <div class="footer-col">
+          <h5>Services</h5>
+          <ul>
+            <li><a href="/r-d-tax-credits">R&amp;D Tax Credits</a></li>
+            <li><a href="/settlement-recovery">Settlement Recovery</a></li>
+            <li><a href="/merchant-services">Merchant Services</a></li>
+            <li><a href="/supplemental-health">Supplemental Health</a></li>
+            <li><a href="/payroll-health">Payroll &amp; Health</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Company</h5>
+          <ul>
+            <li><a href="/about">About Big Wolf</a></li>
+            <li><a href="/testimonials">Testimonials</a></li>
+            <li><a href="/referral-partner">Partners</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="/agent-recruitment">Agent Recruitment</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Get in Touch</h5>
+          <ul>
+            <li><a href="https://calendly.com/big-wolf-solutions" target="_blank">Schedule a Free Call</a></li>
+            <li><a href="tel:8444430482">(844) 443-0482</a></li>
+            <li><a href="mailto:Nick@BigWolfSolutions.com">Nick@BigWolfSolutions.com</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Big Wolf Solutions. All rights reserved.</span>
+      <div>
+        <a href="/privacy-policy">Privacy Policy</a>
+        <a href="/terms">Terms of Service</a>
+      </div>
+    </div>
+  </footer>
+
+  <a href="https://calendly.com/big-wolf-solutions" target="_blank" class="btn btn-primary floating-cta">Book a Free Call</a>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/gh/jaredcordell/bws-site-assets@main/js/site.js"></script>
+</body>
+</html>
