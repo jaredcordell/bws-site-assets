@@ -1,0 +1,1 @@
+# bws-site-assets
