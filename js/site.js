@@ -34,6 +34,9 @@
   if (!toggle || !menu) return;
   toggle.addEventListener('click', function() { menu.classList.toggle('open'); });
   document.addEventListener('click', function(e) { if (!toggle.contains(e.target) && !menu.contains(e.target)) menu.classList.remove('open'); });
+  menu.querySelectorAll('a[href]').forEach(function(link) {
+    link.addEventListener('click', function() { menu.classList.remove('open'); });
+  });
 })();
 
 (function() {
